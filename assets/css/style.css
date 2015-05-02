@@ -362,6 +362,19 @@ th {
   src: url("../fonts/alegresans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/alegresans-regular-webfont.woff2") format("woff2"), url("../fonts/alegresans-regular-webfont.woff") format("woff"), url("../fonts/alegresans-regular-webfont.ttf") format("truetype"), url("../fonts/alegresans-regular-webfont.svg#alegre_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+.page-faq .hero-copy-container h1, .page-faq .hero-copy-container h5 {
+  width: 100% !important;
+  margin-left: 0px !important; }
+.page-faq .hero-copy-container h1 {
+  font-size: 8rem !important; }
+.page-faq .content {
+  width: 60%;
+  margin: 0 auto; }
+  .page-faq .content h4 {
+    font-size: 2.5rem;
+    text-align: left;
+    margin-bottom: 20px; }
+
 /* fontawesome */
 [class*="fontawesome-"]:before {
   font-family: 'FontAwesome', sans-serif; }
@@ -385,18 +398,22 @@ h5 {
     background-size: 100%;
     background-position-y: -100px;
     color: rgba(255, 255, 255, 0.8); }
-    .wrapper .hero nav ul {
-      list-style: none;
-      width: 100%;
-      display: inline-block;
-      float: right; }
-      .wrapper .hero nav ul li {
+    .wrapper .hero nav {
+      display: block;
+      height: 3.5em; }
+      .wrapper .hero nav ul {
+        list-style: none;
+        width: 100%;
         display: inline-block;
-        float: right;
-        margin-right: 50px;
-        color: #fff; }
-        .wrapper .hero nav ul li:hover {
-          color: blue; }
+        float: right; }
+        .wrapper .hero nav ul li {
+          display: inline-block;
+          float: right;
+          margin-right: 50px;
+          padding-bottom: 10px;
+          color: #fff; }
+          .wrapper .hero nav ul li:hover {
+            border-bottom: 1px solid #b5cce8; }
     .wrapper .hero .hero-copy-container h1, .wrapper .hero .hero-copy-container h5 {
       width: 35%;
       margin-left: 5%; }
