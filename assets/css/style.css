@@ -381,8 +381,9 @@ h5 {
   .wrapper .hero {
     background: url("../img/_K3C1571.jpg") no-repeat;
     width: 100%;
-    height: 65vh;
+    height: 85vh;
     background-size: 100%;
+    background-position-y: -100px;
     color: rgba(255, 255, 255, 0.8); }
     .wrapper .hero nav ul {
       list-style: none;
@@ -434,6 +435,9 @@ h5 {
 .column-left, .column-right {
   color: #333;
   margin-bottom: 50px; }
+  .column-left svg, .column-right svg {
+    display: block;
+    margin: 0 auto; }
   .column-left ul, .column-right ul {
     display: none; }
   .column-left span:first-child, .column-right span:first-child {
@@ -452,33 +456,42 @@ h5 {
     font-size: 80%; }
 
 @media only screen and (max-width: 1140px) {
-  .hero h1 {
-    font-size: 8rem !important;
-    line-height: 5rem !important; }
-  .hero h5 {
-    font-size: 1.5rem !important; } }
+  .hero {
+    height: 90vh;
+    background-position-y: 0px; }
+    .hero h1 {
+      font-size: 8rem !important;
+      line-height: 5rem !important; }
+    .hero h5 {
+      font-size: 1.5rem !important; } }
 @media only screen and (max-width: 925px) {
-  .hero h1 {
-    font-size: 6.5rem !important;
-    line-height: 4.25rem !important; }
-  .hero h5 {
-    font-size: 1.5rem !important; } }
+  .hero {
+    background-position-y: 0px; }
+    .hero h1 {
+      font-size: 6.5rem !important;
+      line-height: 4.25rem !important; }
+    .hero h5 {
+      font-size: 1.5rem !important; } }
 @media only screen and (max-width: 750px) {
-  .hero h1 {
-    font-size: 4.5rem !important;
-    line-height: 3.25rem !important; }
-  .hero h5 {
-    font-size: 1rem !important; }
+  .hero {
+    background-position-y: 0px; }
+    .hero h1 {
+      font-size: 4.5rem !important;
+      line-height: 3.25rem !important; }
+    .hero h5 {
+      font-size: 1rem !important; }
 
   nav {
     display: none; } }
 @media only screen and (max-width: 450px) {
-  .hero h1 {
-    font-size: 2.5rem !important;
-    line-height: 1.75rem !important; }
-  .hero h5 {
-    font-size: 1rem !important;
-    margin-top: 0px !important; }
+  .hero {
+    background-position-y: 0px; }
+    .hero h1 {
+      font-size: 2.5rem !important;
+      line-height: 1.75rem !important; }
+    .hero h5 {
+      font-size: 1rem !important;
+      margin-top: 0px !important; }
 
   nav {
     display: none; } }
