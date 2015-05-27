@@ -362,11 +362,13 @@ th {
   src: url("../fonts/alegresans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/alegresans-regular-webfont.woff2") format("woff2"), url("../fonts/alegresans-regular-webfont.woff") format("woff"), url("../fonts/alegresans-regular-webfont.ttf") format("truetype"), url("../fonts/alegresans-regular-webfont.svg#alegre_sansregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.page-faq .hero-copy-container h1, .page-faq .hero-copy-container h5 {
-  width: 100% !important;
-  margin-left: 0px !important; }
-.page-faq .hero-copy-container h1 {
-  font-size: 8em !important; }
+.page-faq .hero-copy-container {
+  margin-top: 30px; }
+  .page-faq .hero-copy-container h1, .page-faq .hero-copy-container h5 {
+    width: 100% !important;
+    margin-left: 0px !important; }
+  .page-faq .hero-copy-container h1 {
+    font-size: 8em !important; }
 .page-faq .content {
   width: 60%;
   margin: 0 auto; }
@@ -374,7 +376,38 @@ th {
     font-size: 1.75em;
     text-align: left;
     margin-bottom: 20px; }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 1200px) {
+  .page-faq .hero {
+    background-position-y: 0px; }
+    .page-faq .hero h1 {
+      font-size: 6em !important; }
+    .page-faq .hero h5 {
+      font-size: 1.5em !important; } }
+@media only screen and (max-width: 925px) {
+  .page-faq .hero {
+    background-position-y: 0px; }
+    .page-faq .hero h1 {
+      font-size: 5em !important; }
+    .page-faq .hero h5 {
+      font-size: 1.5em !important; } }
+@media only screen and (max-width: 825px) {
+  .page-faq .hero {
+    background-position-y: 0px; }
+    .page-faq .hero h1 {
+      font-size: 4em !important; }
+    .page-faq .hero h5 {
+      font-size: 1em !important; } }
+@media only screen and (max-width: 650px) {
+  .page-faq .hero {
+    background-position-y: 0px; }
+    .page-faq .hero h1 {
+      font-size: 3em !important; }
+    .page-faq .hero h5 {
+      font-size: 1em !important;
+      margin-top: 0px !important; } }
+@media only screen and (max-width: 500px) {
+  .page-faq .hero h1 {
+    font-size: 2em !important; }
   .page-faq .content {
     width: 90% !important; }
   .page-faq h4 {
