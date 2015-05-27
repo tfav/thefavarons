@@ -5,7 +5,7 @@
     margin-left: 0px !important;
     }
     h1 {
-      font-size: 8rem !important;
+      font-size: 8em !important;
     }
   }
   .content {
@@ -13,9 +13,20 @@
     margin: 0 auto;
 
     h4 {
-      font-size: 2.5rem;
+      font-size: 1.75em;
       text-align: left;
       margin-bottom: 20px;
+    }
+  }
+  @media only screen and (max-width : 450px) {
+    .content {
+      width: 90% !important;
+    }
+    h4 {
+      font-weight: bold !important;
+    }
+    p {
+      font-weight: lighter !important;
     }
   }
 }

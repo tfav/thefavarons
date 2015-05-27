@@ -5,7 +5,7 @@
 @import 'fonts';
 @import 'faq';
 
-@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(http://fonts.googleapis.com/css?family=Dancing+Script|Lato);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 
 /* fontawesome */
@@ -13,10 +13,14 @@
   font-family: 'FontAwesome', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
   font-family: 'alegre_sansregular', Helvetica, Sans-serif;
   letter-spacing: 4px;
 }
+p, span, a, h4 {
+    font-family: 'Lato', Helvetica;
+}
+
 h5 {
   font-family: 'Dancing Script';
 }
@@ -27,13 +31,23 @@ h5 {
   max-width: 1500px;
   color: $gray;
 
-  .hero {
+  #image-bg-default {
     background: url("../img/_K3C1571.jpg") no-repeat;
-    width: 100%;
-    height: 85vh;
     background-size: 100%;
-    background-position-y: -100px;
+    // background-position-y: -100px;
+    height: 63vw;
+  }
+
+  #image-bg-1 {
+    background: -webkit-linear-gradient(top, rgba(28,74,115, 0.5) 0%, rgba(38,84,125, 0.7) 100%), url('../img/EK3C4700.jpg');
+    background-size: 100%;
+    height: 50vw;
+    // background-position-y: -100px;
+  }
+
+  .hero {
     color: $white-transparent;
+    width: 100%;
 
     nav {
       display: block;
@@ -73,16 +87,16 @@ h5 {
 
     h1 {
       margin-top: 0px;
-      margin-bottom: 0.67rem;
-      padding-top: 3rem;
-      font-size: 10rem;
+      margin-bottom: 0.25em;
+      padding-top: 0.3em;
+      font-size: 10em;
       text-align: center;
-      line-height: 7rem;
+      line-height: 0.7em;
     }
     h5 {
       text-align: center;
-      font-size: 2.5rem;
-      margin-top: 3rem;
+      font-size: 2.5em;
+      margin-top: 1em;
     }
   }
 }
@@ -99,8 +113,9 @@ h5 {
 }
 
 .content {
+  padding-top: 30px;
   h3 {
-    font-size: 3rem;
+    font-size: 3em;
     text-align: center;
   }
 }
@@ -114,6 +129,12 @@ h5 {
   color: $gray;
   margin-bottom: 50px;
 
+  p:nth-child(1) {
+    font-style: italic;
+  }
+  p:nth-child(2) {
+    font-weight: bold;
+  }
   svg {
     display: block;
     margin: 0 auto;
@@ -123,15 +144,15 @@ h5 {
     display: none;
   }
   span:first-child {
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
     display: block;
   }
   h5 {
-    font-size: 3rem;
-    margin-top: 0.5rem;
+    font-size: 3em;
+    margin-top: 0.5em;
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
   }
   p {
     text-transform: uppercase;
@@ -141,19 +162,29 @@ h5 {
   }
 }
 
+footer {
+  height: 80px;
+  padding-top: 30px;
+  background-color: $navy;
+  color: $white;
+  text-align: center;
+}
 
+@media only screen and (min-width : 1600px) {
+  #image-bg-default{
+    height: 1000px !important;
+  }
+}
 
 @media only screen and (max-width : 1140px) {
 
   .hero{
-    height: 90vh;
     background-position-y: 0px;
     h1 {
-      font-size: 8rem !important;
-      line-height: 5rem !important;
+      font-size: 8em !important;
     }
     h5 {
-      font-size: 1.5rem !important;
+      font-size: 1.5em !important;
     }
   }
 
@@ -164,11 +195,10 @@ h5 {
   .hero{
     background-position-y: 0px;
     h1 {
-      font-size: 6.5rem !important;
-      line-height: 4.25rem !important;
+      font-size: 6.5em !important;
     }
     h5 {
-      font-size: 1.5rem !important;
+      font-size: 1.5em !important;
     }
   }
 
@@ -179,11 +209,10 @@ h5 {
   .hero{
     background-position-y: 0px;
     h1 {
-      font-size: 4.5rem !important;
-      line-height: 3.25rem !important;
+      font-size: 4.5em !important;
     }
     h5 {
-      font-size: 1rem !important;
+      font-size: 1em !important;
     }
   }
   nav {
@@ -196,11 +225,10 @@ h5 {
   .hero{
     background-position-y: 0px;
     h1 {
-      font-size: 2.5rem !important;
-      line-height: 1.75rem !important;
+      font-size: 2.5em !important;
     }
     h5 {
-      font-size: 1rem !important;
+      font-size: 1em !important;
       margin-top: 0px !important;
     }
   }
