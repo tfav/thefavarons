@@ -52,21 +52,23 @@ h5 {
     nav {
       display: block;
       height: 3.5em;
+      padding-top: 5px;
+
       ul {
         list-style: none;
         width: 100%;
-        display: inline-block;
-        float: right;
+        height: 45px;
+        padding: 0px;
 
         li {
           display: inline-block;
           float: right;
           margin-right: 50px;
-          padding-bottom: 10px;
+          padding: 10px;
           color: $white;
 
           &:hover {
-            border-bottom: 1px solid $cornflower;
+            background-color: $white-ghost;
 
           }
         }
