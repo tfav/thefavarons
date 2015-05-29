@@ -30,14 +30,14 @@ h5 {
   max-width: 1500px;
   color: $gray;
 
-  #image-bg-default {
+  .image-bg-default {
     background: url("../img/_K3C1571.jpg") no-repeat;
     background-size: 100%;
     // background-position-y: -100px;
     height: 63vw;
   }
 
-  #image-bg-1 {
+  .image-bg-1 {
     background: -webkit-linear-gradient(top, rgba(28,74,115, 0.5) 0%, rgba(38,84,125, 0.7) 100%), url('../img/EK3C4700.jpg');
     background-size: 100%;
     height: 50vw;
@@ -59,17 +59,17 @@ h5 {
         height: 45px;
         padding: 0px;
 
-        li {
+        a {
           display: inline-block;
           float: right;
           margin-right: 50px;
           padding: 10px;
           color: $white;
+          text-decoration: none;
+        }
+        a:hover {
+          background-color: $white-ghost;
 
-          &:hover {
-            background-color: $white-ghost;
-
-          }
         }
       }
 
@@ -167,12 +167,12 @@ footer {
   height: 80px;
   padding-top: 30px;
   background-color: $navy;
-  color: $white;
+  color: lighten($navy, 25%);
   text-align: center;
 }
 
 @media only screen and (min-width : 1600px) {
-  #image-bg-default{
+  .image-bg-default{
     height: 1000px !important;
   }
 }
@@ -232,6 +232,7 @@ footer {
     background-position-y: 0px;
     h1 {
       font-size: 2.5em !important;
+      padding-top: 1.65em !important;
     }
     h5 {
       font-size: 1em !important;
@@ -241,4 +242,75 @@ footer {
   nav {
     display: none;
   }
+  .main-header {
+		display: block;
+		background-color: rgba(255,255,255,0.9);
+		color: $cornflower-dark;
+		z-index: 1;
+		position: fixed;
+		width: 100%;
+		overflow: hidden;
+		padding: .5em 0 0.5em 0;
+		height: 2.5em;
+		-webkit-transition: height 0.45s cubic-bezier(0.315, 0.63, 0.345, 1);
+		-moz-transition: height 0.45s cubic-bezier(0.315, 0.63, 0.345, 1);
+		-o-transition: height 0.45s cubic-bezier(0.315, 0.63, 0.345, 1);
+		-ms-transition: height 0.45s cubic-bezier(0.315, 0.63, 0.345, 1);
+		transition: height 0.45s cubic-bezier(0.315, 0.63, 0.345, 1);
+	}
+	.main-header h6 {
+		font-size: 1em;
+		font-weight: 300;
+		text-align: center;
+		color: $cornflower-dark;
+		position: relative;
+    text-transform: uppercase;
+    margin-top: .7em;
+	}
+	.main-header:before {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transition: all 0.45s cubic-bezier(0.315, 0.63, 0.345, 1);
+		color: $cornflower-dark;
+		margin-left: -0.5em;
+	}
+	.main-header.is-expanded:before {
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+		bottom: 0.25rem;
+	}
+	.mobile-nav {
+		margin-top: 40px;
+	}
+	.mobile-nav ul {
+		list-style: none;
+		text-align: center !important;
+		padding: 0;
+
+	}
+	.mobile-nav ul li {
+
+		border-bottom: 1px solid $cornflower;
+	}
+	.mobile-nav ul li a {
+		color: $cornflower-dark !important;
+		display: block !important;
+		padding: 15px 10px !important;
+    float: none !important;
+    width: 100% !important;
+    margin-left: -0.75em;
+
+    &:hover, &:active {
+      background-color: $cornflower-ghost !important;
+
+    }
+
+  }
+
+	.main-header.is-expanded {
+		height: 13em;
+	}
+
+
 }
