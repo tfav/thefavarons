@@ -380,9 +380,6 @@ th {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.icon-arrow-down:before {
-  content: "\e608"; }
-
 .page-faq .hero-copy-container h1, .page-faq .hero-copy-container h5, .page-wp .hero-copy-container h1, .page-wp .hero-copy-container h5 {
   width: 100% !important;
   margin-left: 0px !important; }
@@ -507,6 +504,10 @@ h5 {
           text-decoration: none; }
         .wrapper .hero nav ul a:hover {
           background-color: rgba(255, 255, 255, 0.3); }
+    .wrapper .hero .header-wrapper h6 {
+      display: none; }
+    .wrapper .hero .icon-arrow-down:before {
+      content: ""; }
     .wrapper .hero .hero-copy-container h1, .wrapper .hero .hero-copy-container h5 {
       width: 35%;
       margin-left: 5%; }
@@ -623,6 +624,9 @@ footer {
   nav {
     display: none; }
 
+  .icon-arrow-down:before {
+    content: "\e608" !important; }
+
   .main-header {
     display: block;
     background-color: rgba(255, 255, 255, 0.9);
@@ -646,7 +650,8 @@ footer {
     color: #32639f;
     position: relative;
     text-transform: uppercase;
-    margin-top: .7em; }
+    margin-top: .7em;
+    display: block !important; }
 
   .main-header:before {
     position: absolute;
