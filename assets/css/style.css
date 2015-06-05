@@ -470,6 +470,11 @@ p, span, a, h4 {
 h5 {
   font-family: 'Dancing Script'; }
 
+a {
+  color: #32639f; }
+  a:hover {
+    color: #b5cce8; }
+
 .wrapper {
   margin: 0 auto;
   padding: 0;
@@ -545,12 +550,16 @@ h5 {
   height: 300px;
   margin: 0 auto; }
 
+#why-two-days {
+  text-align: center;
+  font-style: italic; }
+
 .column-left, .column-right {
   color: #333;
   margin-bottom: 50px; }
   .column-left p:nth-child(1), .column-right p:nth-child(1) {
     font-style: italic; }
-  .column-left p:nth-child(2), .column-right p:nth-child(2) {
+  .column-left .venue-name, .column-right .venue-name {
     font-weight: bold; }
   .column-left svg, .column-right svg {
     display: block;
@@ -575,6 +584,7 @@ h5 {
 footer {
   height: 80px;
   padding-top: 30px;
+  margin-top: 40px;
   background-color: #434d5d;
   color: #7e8ca2;
   text-align: center; }

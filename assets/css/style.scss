@@ -24,6 +24,14 @@ h5 {
   font-family: 'Dancing Script';
 }
 
+a {
+  color: $cornflower-dark;
+
+  &:hover {
+    color: $cornflower;
+  }
+}
+
 .wrapper {
   margin: 0 auto;
   padding: 0;
@@ -132,6 +140,11 @@ h5 {
   height: 300px;
   margin: 0 auto;
 }
+
+#why-two-days {
+  text-align: center;
+  font-style: italic;
+}
 .column-left, .column-right {
   color: $gray;
   margin-bottom: 50px;
@@ -139,7 +152,7 @@ h5 {
   p:nth-child(1) {
     font-style: italic;
   }
-  p:nth-child(2) {
+  .venue-name {
     font-weight: bold;
   }
   svg {
@@ -172,6 +185,7 @@ h5 {
 footer {
   height: 80px;
   padding-top: 30px;
+  margin-top: 40px;
   background-color: $navy;
   color: lighten($navy, 25%);
   text-align: center;
