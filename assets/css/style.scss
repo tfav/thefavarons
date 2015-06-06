@@ -246,7 +246,7 @@ footer {
   }
 }
 
-@media only screen and (max-width : 450px) {
+@media only screen and (max-device-width : 450px) {
 
   .hero{
     background-position-y: 0px;
@@ -289,6 +289,7 @@ footer {
 		position: relative;
     text-transform: uppercase;
     margin-top: .7em;
+    margin-bottom: 0px;
     display: block !important;
 	}
 	.main-header:before {
@@ -305,7 +306,7 @@ footer {
 		bottom: 0.25rem;
 	}
 	.mobile-nav {
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 	.mobile-nav ul {
 		list-style: none;
