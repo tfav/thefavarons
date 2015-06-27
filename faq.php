@@ -1,23 +1,7 @@
-<html>
-  <head>
-    <title>Travis &amp; Ashley</title>
-    <link rel="stylesheet" href="assets/css/style.css" media="screen" title="no title" charset="utf-8">
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-    <script charset="utf-8" src="assets/js/application.js" async></script>
-  </head>
+<?php require_once('header.php') ?>
   <body class="wrapper page-faq">
       <div class="hero image-bg-1">
-        <div class="main-header icon-arrow-down" id="main-header">
-          <div class="header-wrapper">
-            <h6>Menu</h6>
-            <nav class="mobile-nav">
-              <ul>
-                <li><a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=542195596&eventType=Wedding&pwsurl=" target="_blank">Registry</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="index.html">Home</a></li>
-              </ul>
-            </nav>
-          </div>
+          <?php require_once('nav.php') ?>
         </div>
       <div class="hero-copy-container">
         <h1>Frequently Asked Questions</h1>
@@ -67,84 +51,4 @@
         <p class="answer">Yes, Ashley will become Mrs. Favaron and we will be getting a new address. For that address, please contact us through the contact page and we will happily share it with you!</p> -->
       </div>
     </div>
-    <footer>
-      <h5>Travis Favaron &amp; Ashley Thornburg</h5>
-    </footer>
-    <script>
-
-	  var mainHeader = document.getElementById('main-header');
-      var body = document.body;
-      var mainHeader_startHeight,
-          startTouchY,
-          touchY,
-          prevTouchY,
-          touchDirection,
-          touch;
-
-      mainHeader.addEventListener('click', function(e){
-        if (touch || window.innerWidth <= 480)
-        {
-          e.preventDefault();
-        }
-
-        if (this.className.search('is-expanded') == -1)
-        {
-          this.className += ' is-expanded';
-        }
-        else
-        {
-          this.className = this.className.replace(' is-expanded', '');
-        }
-      });
-
-      [].forEach.call(document.querySelectorAll('.mobile-nav ul a'), function(link) {
-        link.addEventListener('touchstart', function(e) {
-          e.stopPropagation();
-          e.preventDefault();
-
-          window.location.href = link.href;
-        });
-      });
-
-      var window_touchmoved = function(e) {
-        e.preventDefault();
-
-        touchY = e.changedTouches[0].clientY;
-        mainHeader.style.height =
-          mainHeader_startHeight + (touchY - startTouchY) + 'px';
-
-        touchDirection = touchY > prevTouchY ? 1 : -1;
-
-        prevTouchY = touchY;
-      };
-
-      mainHeader.addEventListener('touchstart', function(e) {
-        e.preventDefault();
-        touch = true;
-
-        mainHeader_startHeight = this.offsetHeight;
-        startTouchY =
-          prevTouchY = e.changedTouches[0].clientY;
-
-        this.className += ' is-touching';
-        window.addEventListener('touchmove', window_touchmoved, false);
-      }, false);
-
-      mainHeader.addEventListener('touchend', function(e) {
-        window.removeEventListener('touchmove', window_touchmoved);
-
-        this.style.height = '';
-        this.className = this.className.replace(' is-touching', '');
-
-        if (touchDirection == -1)
-        {
-          this.className = this.className.replace(' is-expanded', '');
-        }
-        else if (this.className.search('is-expanded') == -1)
-        {
-          this.className += ' is-expanded';
-        }
-      }, false);
-		</script>
-  </body>
-</html>
+<?php require_once('footer.php') ?>
