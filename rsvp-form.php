@@ -2,7 +2,7 @@
   <form action="rsvp.php" method="post">
     <div class="form-group">
       <label for="name">Name on Invitation</label>
-      <input type="text" name="name" placeholder="Mr. and Mrs. Travis Favaron">
+      <input type="text" class="form-control" name="name" placeholder="Mr. and Mrs. Travis Favaron">
     </div>
     <div class="form-group">
       <label for="number_of_guests">Guests Attending</label>
@@ -21,37 +21,46 @@
     </div>
     <div class="form-group">
       <label for="guest_names">Guest names</label>
-      <textarea name="guest_names" placeholder="Travis Favaron, Ashley Thornburg" rows=10 columns=4></textarea>
+      <textarea name="guest_names" class="form-control" placeholder="Travis Favaron, Ashley Thornburg" rows=5 columns=10></textarea>
     </div>
-    <div class="radio">
-      <label for="kids_attending">
-        <input type="radio" name="kids_attending" value="1"> Yes
-        <input type="radio" name="kids_attending" value="0"> No
-      </label>
-    </div>
-    <div class="radio">
-      <label for="ceremony">
-        <input type="radio" name="ceremony" value="1"> Yes
-        <input type="radio" name="ceremony" value="0"> No
-      </label>
-    </div>
-    <div class="radio">
-      <label class="radio-inline" for="reception">
-        <input type="radio" name="reception" value="1"> Yes
-        <input type="radio" name="reception" value="0"> No
-      </label>
-    </div>
+    <label class="control-label">Kids attending?</label>
+      <div class="radio">
+        <label for="kids_attending" class="radio-inline">
+          <input type="radio" name="kids_attending" value="1"> Yes
+        </label>
+        <label for="kids_attending" class="radio-inline">
+          <input type="radio" name="kids_attending" value="0"> No
+        </label>
+      </div>
+    <label class="control-label">Attending Ceremony?</label>
+      <div class="radio">
+        <label for="ceremony" class="radio-inline">
+          <input type="radio" name="ceremony" value="1"> Yes
+        </label>
+        <label for="ceremony" class="radio-inline">
+          <input type="radio" name="ceremony" value="0"> No
+        </label>
+      </div>
+    <label class="control-label">Attending Reception?</label>
+      <div class="radio">
+        <label class="radio-inline" for="reception">
+          <input type="radio" name="reception" value="1"> Yes
+        </label>
+        <label class="radio-inline" for="reception">
+          <input type="radio" name="reception" value="0"> No
+        </label>
+      </div>
     <div class="form-group">
         <label for="address_line_1">Address Line 1</label>
-        <input type="text" name="address_line_1" placeholder="Street name and number">
+        <input type="text" class="form-control" name="address_line_1" placeholder="Street name and number">
     </div>
     <div class="form-group">
       <label for="address_line_2">Address Line 2 (optional)</label>
-      <input type="text" name="address_line_2" placeholder="Apartment number">
+      <input type="text" class="form-control" name="address_line_2" placeholder="Apartment number">
     </div>
     <div class="form-group">
       <label for="city">City</label>
-      <input type="text" name="city" placeholder="Austin">
+      <input type="text" class="form-control" name="city" placeholder="Austin">
     </div>
     <div class="form-group">
       <label for="state">State</label>
@@ -111,11 +120,11 @@
     </div>
     <div class="form-group">
       <label for="zipcode">Zipcode</label>
-      <input type="text" name="zipcode" placeholder="78701">
+      <input type="text" class="form-control" name="zipcode" placeholder="78701">
     </div>
     <div class="form-group">
       <label for="comments">Additional Comments</label>
-      <textarea name="comments" placeholder="Anything else you'd like to say to us?" rows=10 columns=4></textarea>
+      <textarea class="form-control" name="comments" placeholder="Anything else you'd like to say to us?" rows=5 columns=10></textarea>
     </div>
     <input type="submit" name="submit" value="RSVP">
   </form>
