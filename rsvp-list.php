@@ -9,7 +9,7 @@ if($user == "admin" && $pass == "Favaronwedding2015") {
   $sql = "SELECT * FROM rsvps";
   if($result = mysqli_query($link, $sql)){
     if(mysqli_num_rows($result) > 0){
-        echo "<table border=1>";
+        echo "<table border=1 class='table table-condensed'>";
             echo "<tr>";
                 echo "<th>id</th>";
                 echo "<th>RSVP At</th>";
