@@ -1,23 +1,37 @@
 <?php require_once('header.php') ?>
   <form class="" action="rsvp.php" method="post">
-    <label for="name">Name on Invitation</label><input type="text" name="name" value="">
+    <label for="name">Name on Invitation</label>
+      <input type="text" name="name" placeholder="Mr. and Mrs. Travis Favaron">
     <label for="number_of_guests">Guests Attending</label>
-    <select class="" name="number_of_guests">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-    </select>
-    <label for="guest_names">Guest names</label><textarea name="guest_names" value="" rows=10 columns=4></textarea>
-    <label for="address_line_1">Address Line 1</label><input type="text" name="address_line_1" value="">
-    <label for="address_line_2">Address Line 2</label><input type="text" name="address_line_2" value="">
-    <label for="city">City</label><input type="text" name="city" value="">
+      <select class="" name="number_of_guests">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+      </select>
+    <label for="guest_names">Guest names</label>
+      <textarea name="guest_names" placeholder="Travis Favaron, Ashley Thornburg" rows=10 columns=4></textarea>
+    <label for="kids_attending">Kids Attending?</label>
+      <input type="radio" name="kids_attending" value="1">Yes
+      <input type="radio" name="kids_attending" value="0">No
+    <label for="ceremony">Ceremony?</label>
+      <input type="radio" name="ceremony" value="1">Yes
+      <input type="radio" name="ceremony" value="0">No
+    <label for="reception">Reception?</label>
+      <input type="radio" name="reception" value="1">Yes
+      <input type="radio" name="reception" value="0">No
+    <label for="address_line_1">Address Line 1</label>
+      <input type="text" name="address_line_1" placeholder="Street name and number">
+    <label for="address_line_2">Address Line 2 (optional)</label>
+      <input type="text" name="address_line_2" placeholder="Apartment number">
+    <label for="city">City</label>
+      <input type="text" name="city" placeholder="Austin">
     <label for="state">State</label><select name="state">
     	<option value="AL">Alabama</option>
     	<option value="AK">Alaska</option>
@@ -71,7 +85,9 @@
     	<option value="WI">Wisconsin</option>
     	<option value="WY">Wyoming</option>
     </select>
-    <label for="zipcode">Zipcode</label><input type="text" name="zipcode" value="">
-    <label for="comments">Additional Comments</label><textarea name="comments" value="" rows=10 columns=4></textarea>
+    <label for="zipcode">Zipcode</label>
+      <input type="text" name="zipcode" placeholder="78701">
+    <label for="comments">Additional Comments</label>
+      <textarea name="comments" placeholder="Anything else you'd like to say to us?" rows=10 columns=4></textarea>
     <input type="submit" name="submit" value="RSVP">
   </form>

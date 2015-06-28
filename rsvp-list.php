@@ -12,14 +12,36 @@ if($user == "admin" && $pass == "Favaronwedding2015") {
         echo "<table border=1>";
             echo "<tr>";
                 echo "<th>id</th>";
-                echo "<th>created_at</th>";
+                echo "<th>RSVP At</th>";
                 echo "<th>name</th>";
+                echo "<th>Num of Guests</th>";
+                echo "<th>Guest Names</th>";
+                echo "<th>Kids Attending?</th>";
+                echo "<th>Attending Ceremony?</th>";
+                echo "<th>Attending Reception?</th>";
+                echo "<th>Address Line 1</th>";
+                echo "<th>Address Line 2</th>";
+                echo "<th>City</th>";
+                echo "<th>State</th>";
+                echo "<th>Zipcode</th>";
+                echo "<th>Comments</th>";
             echo "</tr>";
         while($row = mysqli_fetch_array($result)){
             echo "<tr>";
                 echo "<td>" . $row['id'] . "</td>";
                 echo "<td>" . $row['created_at'] . "</td>";
                 echo "<td>" . $row['name'] . "</td>";
+                echo "<td>" . $row['number_of_guests'] . "</td>";
+                echo "<td>" . $row['guest_names'] . "</td>";
+                echo "<td>" . $row['kids_attending'] . "</td>";
+                echo "<td>" . $row['ceremony'] . "</td>";
+                echo "<td>" . $row['reception'] . "</td>";
+                echo "<td>" . $row['address_line_1'] . "</td>";
+                echo "<td>" . $row['address_line_2'] . "</td>";
+                echo "<td>" . $row['city'] . "</td>";
+                echo "<td>" . $row['state'] . "</td>";
+                echo "<td>" . $row['zipcode'] . "</td>";
+                echo "<td>" . $row['comments'] . "</td>";
             echo "</tr>";
         }
         echo "</table>";
