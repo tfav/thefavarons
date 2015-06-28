@@ -6,31 +6,8 @@ $link = mysqli_connect("localhost", "root", "root", "thefavarons");
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
-
- $sql = "SELECT * FROM guests WHERE name = 'Travis F'";
-
-      if($result = mysqli_query($link, $sql)){
-        if(mysqli_num_rows($result) > 0){
-          echo "<table>";
-            echo "<tr>";
-                echo "<th>id</th>";
-                echo "<th>name</th>";
-                echo "<th>all_access?</th>";
-            echo "</tr>";
-        while($row = mysqli_fetch_array($result)){
-            echo "<tr>";
-                echo "<td>" . $row['id'] . "</td>";
-                echo "<td>" . $row['name'] . "</td>";
-                echo "<td>" . $row['all_access'] . "</td>";
-            echo "</tr>";
-        }
-        echo "</table>";
-        // Close result set
-        mysqli_free_result($result);
-    } else{
-        echo "No records matching your query were found.";
-    }
-}
+ $name = htmlspecialchars($_POST['name']);
+ $sql = "SELECT * FROM guests WHERE name = '$name'";
 
      if($result = mysqli_query($link, $sql)){
 
@@ -40,9 +17,12 @@ if($link === false){
          echo "All Access Bitch!";
        // Close result set
        mysqli_free_result($result);
-   } else{
-       echo "No access bitch!";
+   } elseif(mysqli_num_rows($result) > 0 && $row[all_access] == 0 ) {
+       echo "partial access bitch!";
+   } else {
+     echo "stop trying to crash the party";
    }
+
 }
 
 
