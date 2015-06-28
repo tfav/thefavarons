@@ -34,7 +34,7 @@ else {
     if(isset($_POST))
     {?>
 
-            <form method="POST" action="guest-list.php">
+            <form method="POST" action="rsvp-list.php">
             User <input type="text" name="user"></input><br/>
             Pass <input type="password" name="pass"></input><br/>
             <input type="submit" name="submit" value="Go"></input>
