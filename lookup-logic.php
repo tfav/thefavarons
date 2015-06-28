@@ -15,12 +15,14 @@ if($link === false){
 
        if(mysqli_num_rows($result) > 0 && $row[all_access] == 1 ){
          echo "All Access Bitch!";
-       // Close result set
-       mysqli_free_result($result);
+
    } elseif(mysqli_num_rows($result) > 0 && $row[all_access] == 0 ) {
        echo "partial access bitch!";
    } else {
      echo "stop trying to crash the party";
+
+     // Close result set
+     mysqli_free_result($result);
    }
 
 }
