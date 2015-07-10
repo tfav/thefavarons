@@ -198,7 +198,7 @@ footer {
   }
 }
 
-@media only screen and (max-width : 1140px) {
+@media only screen and (min-device-width : 700px) and (max-width : 1140px) {
 
   .hero{
     background-position-y: 0px;
@@ -212,7 +212,7 @@ footer {
 
 }
 
-@media only screen and (max-width : 925px) {
+@media only screen and (min-device-width : 700px) and (max-device-width : 925px) {
 
   .hero{
     background-position-y: 0px;
@@ -226,7 +226,7 @@ footer {
 
 }
 
-@media only screen and (max-width : 750px) {
+@media only screen and (min-device-width : 700px) and (max-device-width : 750px) {
 
   .hero{
     background-position-y: 0px;
@@ -247,10 +247,12 @@ footer {
   }
 }
 
-@media only screen and (max-device-width : 450px) {
+@media only screen
+       and (max-device-width : 667px) {
 
   .hero{
     background-position-y: 0px;
+    border-bottom: 10px solid red;
     h1 {
       font-size: 2.5em !important;
       padding-top: 1.65em !important;
