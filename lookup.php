@@ -1,6 +1,6 @@
 <?php require_once('header.php');
 ?>
-<body class="wrapper page-faq">
+<body class="wrapper page-minor">
   <div class="hero image-bg-1">
     <?php require_once('nav.php') ?>
   </div>
