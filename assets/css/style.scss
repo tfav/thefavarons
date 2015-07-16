@@ -17,11 +17,11 @@ h1, h2, h3 {
   font-family: 'alegre_sansregular', Helvetica, Sans-serif;
   letter-spacing: 4px;
 }
-p, span, a, h4 {
+p, span, a {
     font-family: 'Lato', Helvetica;
 }
 
-h5 {
+h4, h5 {
   font-family: 'Dancing Script';
 }
 
@@ -47,7 +47,7 @@ a {
   }
 
   .image-bg-1 {
-    background: -webkit-linear-gradient(top, rgba(28,74,115, 0.5) 0%, rgba(38,84,125, 0.7) 100%), url('../img/EK3C4700.jpg');
+    background: -webkit-linear-gradient(top, rgba(28,74,115, 0.5) 0%, rgba(28,74,115, 0.5) 100%), url('../img/EK3C4700.jpg');
     background-size: 100%;
     height: 50vw;
     // background-position-y: -100px;
@@ -117,7 +117,8 @@ a {
   }
 }
 .page-minor > .image-bg-1 {
-  height: 15vw;
+  height: 75px;
+  background-position-y: -500px;
 }
 .column-left {
   width: 49%;
@@ -137,7 +138,25 @@ a {
     text-align: center;
   }
 }
+.page-minor {
+  .content {
+    width: 60%;
+    margin: 0 auto;
 
+    h4 {
+      color: $navy;
+      font-size: 2.25em;
+      margin-bottom: 0.5em;
+    }
+    h5 {
+        font-size: 1.5em;
+        color: $gold;
+    }
+  }
+  .content-centered {
+    text-align: center;
+  }
+}
 #map1, #map2 {
   width: 300px;
   height: 300px;
@@ -200,7 +219,7 @@ footer {
   }
 }
 
-@media only screen and (min-device-width : 700px) and (max-width : 1140px) {
+@media only screen and (max-width : 1140px) {
 
   .hero{
     background-position-y: 0px;
@@ -214,7 +233,7 @@ footer {
 
 }
 
-@media only screen and (min-device-width : 700px) and (max-device-width : 925px) {
+@media only screen and (max-width : 925px) {
 
   .hero{
     background-position-y: 0px;
@@ -228,7 +247,7 @@ footer {
 
 }
 
-@media only screen and (min-device-width : 700px) and (max-device-width : 750px) {
+@media only screen and (max-width : 750px) {
 
   .hero{
     background-position-y: 0px;
@@ -249,12 +268,10 @@ footer {
   }
 }
 
-@media only screen
-       and (max-device-width : 667px) {
+@media only screen and (max-device-width : 450px) {
 
   .hero{
     background-position-y: 0px;
-    border-bottom: 10px solid red;
     h1 {
       font-size: 2.5em !important;
       padding-top: 1.65em !important;

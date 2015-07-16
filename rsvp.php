@@ -34,95 +34,102 @@ mysqli_close($link);
 
 
 ?>
-<?php if($_COOKIE['all_access'] == 1) {
-  echo "<h3>Woohoo! you are invited!</h3>";
-} elseif($_COOKIE['all_access'] == 0) {
-  echo "You, just the reception";
-} ?>
+<body class="wrapper page-minor">
+  <div class="hero image-bg-1">
+    <?php require_once('nav.php') ?>
+  </div>
+  </div>
+  <div class="content">
 <div class="form-wrapper">
+  <h4>Just a few details needed</h4>
+  <hr>
   <form action="rsvp-controller.php" method="post">
     <div class="form-group">
-      <label for="name">Name on Invitation</label>
+      <label for="name">Name</label>
       <input type="text" class="form-control" name="name" placeholder="Mr. and Mrs. Travis Favaron" value="<?php echo $_POST['name'] ?>">
     </div>
-    <hr>
     <?php if($_COOKIE['all_access'] == 1) {
       echo "
             <div class='form-group'>
-              <h2>Ceremony</h2>
-              <label class='control-label'>Attending Ceremony?</label>
+              <h5>Ceremony &mdash; September 26th, 2015 at 10:30am</h5>
+              <label class='control-label'>Will you be attending the ceremony?</label>
                 <div class='radio'>
                   <label for='ceremony' class='radio-inline'>
-                    <input type='radio' name='ceremony' value='1'> Yes
+                    <input type='radio' name='ceremony' value='1'> Attending
                   </label>
                   <label for='ceremony' class='radio-inline'>
-                    <input type='radio' name='ceremony' value='0'> No
+                    <input type='radio' name='ceremony' value='0'> Regretfully Decline
                   </label>
                 </div>
-              <label for='number_of_guests'>Guests Attending</label>
-              <select class='form-control' name='number_of_guests_ceremony'>
-                <option value='1'>1</option>
-                <option value='2'>2</option>
-                <option value='3'>3</option>
-                <option value='4'>4</option>
-                <option value='5'>5</option>
-                <option value='6'>6</option>
-                <option value='7'>7</option>
-                <option value='8'>8</option>
-                <option value='9'>9</option>
-                <option value='10'>10</option>
-              </select>
-              <label class='control-label'>Kids attending?</label>
-                <div class='radio'>
-                  <label for='kids_attending' class='radio-inline'>
-                    <input type='radio' name='kids_attending_ceremony' value='1'> Yes
-                  </label>
-                  <label for='kids_attending' class='radio-inline'>
-                    <input type='radio' name='kids_attending_ceremony' value='0'> No
-                  </label>
-                </div>
-            </div>
+              </div>
+              <div class='form-group'>
+                <label for='number_of_guests'>Guests Attending</label>
+                <select class='form-control' name='number_of_guests_ceremony'>
+                  <option value='1'>1</option>
+                  <option value='2'>2</option>
+                  <option value='3'>3</option>
+                  <option value='4'>4</option>
+                  <option value='5'>5</option>
+                  <option value='6'>6</option>
+                  <option value='7'>7</option>
+                  <option value='8'>8</option>
+                  <option value='9'>9</option>
+                  <option value='10'>10</option>
+                </select>
+              </div>
+              <div class='form-group'>
+                <label class='control-label'>Kids attending?</label>
+                  <div class='radio'>
+                    <label for='kids_attending' class='radio-inline'>
+                      <input type='radio' name='kids_attending_ceremony' value='1'> Yes
+                    </label>
+                    <label for='kids_attending' class='radio-inline'>
+                      <input type='radio' name='kids_attending_ceremony' value='0'> No
+                    </label>
+                  </div>
+              </div>
             ";
             } ?>
+  <h5>Reception &mdash; September 27th, 2015 at 7:00pm</h5>
     <div class="form-group">
-      <h2>Reception</h2>
       <label class="control-label">Attending Reception?</label>
         <div class="radio">
           <label class="radio-inline" for="reception">
-            <input type="radio" name="reception" value="1"> Yes
+            <input type="radio" name="reception" value="1"> Attending
           </label>
           <label class="radio-inline" for="reception">
-            <input type="radio" name="reception" value="0"> No
+            <input type="radio" name="reception" value="0"> Regretfully Decline
           </label>
         </div>
-      <label for="number_of_guests">Guests Attending</label>
-      <select class="form-control" name="number_of_guests_reception">
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-      </select>
-      <label class="control-label">Kids attending?</label>
-        <div class="radio">
-          <label for="kids_attending" class="radio-inline">
-            <input type="radio" name="kids_attending_reception" value="1"> Yes
-          </label>
-          <label for="kids_attending" class="radio-inline">
-            <input type="radio" name="kids_attending_reception" value="0"> No
-          </label>
-        </div>
-    </div>
-    <div class="form-group">
-      <label for="guest_names">Guest names</label>
-      <textarea name="guest_names" class="form-control" placeholder="Travis Favaron, Ashley Thornburg" rows=5 columns=10></textarea>
-    </div>
-    <h2>Mailing Address</h2>
+      </div>
+      <div class="form-group">
+        <label for="number_of_guests" class="control-label">Guests Attending</label>
+        <select class="form-control" name="number_of_guests_reception">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="control-label">Kids attending?</label>
+          <div class="radio">
+            <label for="kids_attending" class="radio-inline">
+              <input type="radio" name="kids_attending_reception" value="1"> Yes
+            </label>
+            <label for="kids_attending" class="radio-inline">
+              <input type="radio" name="kids_attending_reception" value="0"> No
+            </label>
+          </div>
+      </div>
+    <hr>
+    <h5>Mailing Address</h5>
     <div class="form-group">
         <label for="address_line_1">Address Line 1</label>
         <input type="text" class="form-control" name="address_line_1" placeholder="Street name and number">
@@ -195,14 +202,19 @@ mysqli_close($link);
       <label for="zipcode">Zipcode</label>
       <input type="text" class="form-control" name="zipcode" placeholder="78701">
     </div>
+    <hr>
+    <div class="form-group">
+      <label for="guest_names">Guest names</label>
+      <textarea name="guest_names" class="form-control" placeholder="Travis Favaron, Ashley Thornburg" rows=5 columns=10></textarea>
+    </div>
     <div class="form-group">
       <label for="song_request">Song Request</label>
-      <input type="text" class="form-control" name="song_request" placeholder="Celebration by The Who">
+      <input type="text" class="form-control" name="song_request" placeholder="Cha Cha Slide">
     </div>
     <div class="form-group">
       <label for="comments">Additional Comments</label>
       <textarea class="form-control" name="comments" placeholder="Anything else you'd like to say to us?" rows=5 columns=10></textarea>
     </div>
-    <input type="submit" name="submit" value="RSVP">
+    <button type="submit" class="btn btn-default btn-lg">RSVP</button>
   </form>
 </div>

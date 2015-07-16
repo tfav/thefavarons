@@ -1,5 +1,5 @@
 <footer>
-  <h5>Travis Favaron &amp; Ashley Thornburg</h5>
+  <h5>Made with &hearts; &mdash; Travis Favaron &amp; Ashley Thornburg</h5>
 </footer>
 <script>
 
