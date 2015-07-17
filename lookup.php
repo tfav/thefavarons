@@ -13,3 +13,5 @@
       </div>
       <button type="submit" class="btn btn-default btn-lg">Find</button>
     </form>
+  </div>
+<?php require_once('footer.php') ?>

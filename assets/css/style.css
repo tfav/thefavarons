@@ -2064,7 +2064,7 @@ h1, h2, h3 {
 p, span, a {
   font-family: 'Lato', Helvetica; }
 
-h4, h5 {
+h4, h5, h6 {
   font-family: 'Dancing Script'; }
 
 a {
@@ -2072,11 +2072,15 @@ a {
   a:hover {
     color: #b5cce8; }
 
+html {
+  background-color: #434d5d; }
+
 .wrapper {
   margin: 0 auto;
   padding: 0;
   max-width: 1500px;
-  color: #333; }
+  color: #333;
+  background-color: transparent; }
   .wrapper .image-bg-default {
     background: url("../img/_K3C1571.jpg") no-repeat;
     background-size: 100%;
@@ -2141,14 +2145,16 @@ a {
   display: inline-block; }
 
 .content {
-  padding-top: 30px; }
+  padding-top: 30px;
+  background: #fff;
+  padding-bottom: 30px; }
   .content h3 {
     font-size: 3em;
     text-align: center; }
 
 .page-minor .content {
-  width: 60%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  min-height: 70%; }
   .page-minor .content h4 {
     color: #434d5d;
     font-size: 2.25em;
@@ -2156,6 +2162,9 @@ a {
   .page-minor .content h5 {
     font-size: 1.5em;
     color: #cd9957; }
+.page-minor .form-wrapper {
+  width: 60%;
+  margin: 0 auto; }
 .page-minor .content-centered {
   text-align: center; }
 
@@ -2198,7 +2207,6 @@ a {
 footer {
   height: 80px;
   padding-top: 30px;
-  margin-top: 40px;
   background-color: #434d5d;
   color: #7e8ca2;
   text-align: center; }

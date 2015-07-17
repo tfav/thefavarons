@@ -21,7 +21,7 @@ p, span, a {
     font-family: 'Lato', Helvetica;
 }
 
-h4, h5 {
+h4, h5, h6 {
   font-family: 'Dancing Script';
 }
 
@@ -32,12 +32,15 @@ a {
     color: $cornflower;
   }
 }
-
+html {
+  background-color: $navy;
+}
 .wrapper {
   margin: 0 auto;
   padding: 0;
   max-width: 1500px;
   color: $gray;
+  background-color: transparent;
 
   .image-bg-default {
     background: url("../img/_K3C1571.jpg") no-repeat;
@@ -133,6 +136,8 @@ a {
 
 .content {
   padding-top: 30px;
+  background: $white;
+  padding-bottom: 30px;
   h3 {
     font-size: 3em;
     text-align: center;
@@ -140,8 +145,8 @@ a {
 }
 .page-minor {
   .content {
-    width: 60%;
     margin: 0 auto;
+    min-height: 70%;
 
     h4 {
       color: $navy;
@@ -152,6 +157,10 @@ a {
         font-size: 1.5em;
         color: $gold;
     }
+  }
+  .form-wrapper {
+    width: 60%;
+    margin: 0 auto;
   }
   .content-centered {
     text-align: center;
@@ -207,7 +216,6 @@ a {
 footer {
   height: 80px;
   padding-top: 30px;
-  margin-top: 40px;
   background-color: $navy;
   color: lighten($navy, 25%);
   text-align: center;
