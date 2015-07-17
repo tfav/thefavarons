@@ -385,10 +385,10 @@ th {
   margin-left: 0px !important; }
 .page-faq .hero-copy-container h1, .page-wp .hero-copy-container h1 {
   font-size: 8em !important; }
-.page-faq .content, .page-wp .content {
+.page-faq .content-inner, .page-wp .content-inner {
   width: 60%;
   margin: 0 auto; }
-  .page-faq .content h4, .page-wp .content h4 {
+  .page-faq .content-inner h4, .page-wp .content-inner h4 {
     font-size: 1.75em;
     text-align: left;
     margin-bottom: 20px; }
