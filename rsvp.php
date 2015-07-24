@@ -17,13 +17,17 @@ if($link === false){
          $_COOKIE['all_access'] = 1;
       // If guest is invited to only reception, set local cookie for all_access == 0
       } elseif(mysqli_num_rows($result) > 0 && $row[all_access] == 0 ) {
-       $_COOKIE['all_access'] = 0;
+         $_COOKIE['all_access'] = 0;
 
-   } else {
-     header("Location: http:localhost:8888/");
+   } elseif(mysqli_num_rows($result) <= 0) {
+     echo "<div class='name-not-found'>
+        <p>Sorry, we couldn't find your invitation. Please <a href='lookup.php'>try again</a>.</p>
+        <p>If you are having repeated trouble, please <a href='contact.php'>contact us</a>.</p>
+     </div>";
 
      // Close result set
      mysqli_free_result($result);
+     die();
    }
 
 }
@@ -43,10 +47,10 @@ mysqli_close($link);
 <div class="form-wrapper">
   <h4>Just a few details needed</h4>
   <hr>
-    <form action="rsvp-controller.php" method="post">
+    <form action="rsvp-controller.php" method="post" data-toggle="validator" role="form">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" name="name" placeholder="Mr. and Mrs. Travis Favaron" value="<?php echo $_POST['name'] ?>">
+        <label for="name" class="control-label">Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Travis Favaron" required>
       </div>
       <?php if($_COOKIE['all_access'] == 1) {
         echo "
@@ -63,7 +67,7 @@ mysqli_close($link);
                   </div>
                 </div>
                 <div class='form-group'>
-                  <label for='number_of_guests'>Guests Attending</label>
+                  <label for='number_of_guests' class='control-label'>Guests Attending</label>
                   <select class='form-control' name='number_of_guests_ceremony'>
                     <option value='1'>1</option>
                     <option value='2'>2</option>
@@ -95,16 +99,16 @@ mysqli_close($link);
         <label class="control-label">Attending Reception?</label>
           <div class="radio">
             <label class="radio-inline" for="reception">
-              <input type="radio" name="reception" value="1"> Attending
+              <input type="radio" name="reception" value="1" required> Attending
             </label>
             <label class="radio-inline" for="reception">
-              <input type="radio" name="reception" value="0"> Regretfully Decline
+              <input type="radio" name="reception" value="0" required> Regretfully Decline
             </label>
           </div>
         </div>
         <div class="form-group">
           <label for="number_of_guests" class="control-label">Guests Attending</label>
-          <select class="form-control" name="number_of_guests_reception">
+          <select class="form-control" name="number_of_guests_reception" required>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -121,30 +125,30 @@ mysqli_close($link);
           <label class="control-label">Kids attending?</label>
             <div class="radio">
               <label for="kids_attending" class="radio-inline">
-                <input type="radio" name="kids_attending_reception" value="1"> Yes
+                <input type="radio" name="kids_attending_reception" value="1" required> Yes
               </label>
               <label for="kids_attending" class="radio-inline">
-                <input type="radio" name="kids_attending_reception" value="0"> No
+                <input type="radio" name="kids_attending_reception" value="0" required> No
               </label>
             </div>
         </div>
       <hr>
       <h5>Mailing Address</h5>
       <div class="form-group">
-          <label for="address_line_1">Address Line 1</label>
-          <input type="text" class="form-control" name="address_line_1" placeholder="Street name and number">
+          <label for="address_line_1" class="control-label">Address Line 1</label>
+          <input type="text" class="form-control" name="address_line_1" placeholder="Street name and number" required>
       </div>
       <div class="form-group">
-        <label for="address_line_2">Address Line 2 (optional)</label>
-        <input type="text" class="form-control" name="address_line_2" placeholder="Apartment number">
+        <label for="address_line_2" class="control-label">Address Line 2 (optional)</label>
+        <input type="text" class="form-control" name="address_line_2" placeholder="Apartment number" required>
       </div>
       <div class="form-group">
-        <label for="city">City</label>
-        <input type="text" class="form-control" name="city" placeholder="Austin">
+        <label for="city" class="control-label">City</label>
+        <input type="text" class="form-control" name="city" placeholder="Austin" required>
       </div>
       <div class="form-group">
-        <label for="state">State</label>
-        <select name="state" class="form-control">
+        <label for="state" class="control-label">State</label>
+        <select name="state" class="form-control" required>
         	<option value="AL">Alabama</option>
         	<option value="AK">Alaska</option>
         	<option value="AZ">Arizona</option>
@@ -199,20 +203,20 @@ mysqli_close($link);
         </select>
       </div>
       <div class="form-group">
-        <label for="zipcode">Zipcode</label>
-        <input type="text" class="form-control" name="zipcode" placeholder="78701">
+        <label for="zipcode" class="control-label">Zipcode</label>
+        <input type="text" class="form-control" name="zipcode" placeholder="78701" required>
       </div>
       <hr>
       <div class="form-group">
-        <label for="guest_names">Guest names</label>
-        <textarea name="guest_names" class="form-control" placeholder="Travis Favaron, Ashley Thornburg" rows=5 columns=10></textarea>
+        <label for="guest_names" class="control-label">Guest names</label>
+        <textarea name="guest_names" class="form-control" placeholder="Travis Favaron, Ashley Thornburg" rows=5 columns=10 required></textarea>
       </div>
       <div class="form-group">
-        <label for="song_request">Song Request</label>
+        <label for="song_request" class="control-label">Song Request</label>
         <input type="text" class="form-control" name="song_request" placeholder="Cha Cha Slide">
       </div>
       <div class="form-group">
-        <label for="comments">Additional Comments</label>
+        <label for="comments" class="control-label">Additional Comments</label>
         <textarea class="form-control" name="comments" placeholder="Anything else you'd like to say to us?" rows=5 columns=10></textarea>
       </div>
       <button type="submit" class="btn btn-default btn-lg">RSVP</button>

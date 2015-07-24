@@ -35,6 +35,17 @@ a {
 html {
   background-color: $navy;
 }
+
+.name-not-found {
+  text-align: center;
+  padding-top: 25%;
+}
+.list-unstyled {
+  list-style: none;
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+  -o-padding-start: 0px;
+}
 .wrapper {
   margin: 0 auto;
   padding: 0;

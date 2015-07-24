@@ -1,6 +1,10 @@
 <footer>
   <h5>Made with &hearts; &mdash; Travis Favaron &amp; Ashley Thornburg</h5>
 </footer>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script charset="utf-8" src="assets/js/application.js" async></script>
+<script charset="utf-8" src="assets/js/validator.js" async></script>
 <script>
 
 var mainHeader = document.getElementById('main-header');

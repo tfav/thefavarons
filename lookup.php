@@ -7,9 +7,9 @@
   </div>
   <div class="content content-centered">
     <h5>Please enter the name on your invitation (without the Mr. or Mrs.)</h5>
-    <form class="form-inline" action="rsvp.php" method="post">
+    <form class="form-inline" action="rsvp.php" method="post" data-toggle="validator">
       <div class="form-group">
-        <input type="text" class="form-control input-lg" name="name" placeholder="Travis Favaron">
+        <input type="text" class="form-control input-lg" name="name" placeholder="Travis Favaron" required>
       </div>
       <button type="submit" class="btn btn-default btn-lg">Find</button>
     </form>
