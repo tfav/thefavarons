@@ -11,7 +11,7 @@
     <div class="content">
       <div class="column-left">
         <h5>Family Ceremony</h5>
-        <p>September 26th, 2015 &mdash; 10:00 AM</p>
+        <p>September 26th, 2015 &mdash; 10:30 AM</p>
         <p class="venue-name">The Homes of Mr. and Mrs. David Jamail &amp; Michael Frost</p>
         <p><a href="https://www.google.com/maps/dir//2303+River+Hills+Rd,+Austin,+TX+78733/">2303 River Hills Rd, Austin, TX 78733</a></p>
         <div id="map1"></div>
