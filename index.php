@@ -24,7 +24,7 @@
         <div id="map2"></div>
       </div>
       <p id="why-two-days">
-        Wondering why we are getting married on two days? <a href="faq.html#twoDays">Let us explain ourselves</a>
+        Wondering why we are getting married on two days? <a href="faq#twoDays">Let us explain ourselves</a>
       </p>
     </div>
   <?php require_once('footer.php') ?>
