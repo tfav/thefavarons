@@ -7,7 +7,7 @@
         <li><a href="contact">Contact</a></li>
         <li><a href="faq">FAQ</a></li>
         <!-- <li><a href="lookup.php">RSVP</a></li> -->
-        <li><a href="/thefavarons">Home</a></li>
+        <li><a href="/">Home</a></li>
       </ul>
     </nav>
   </div>
