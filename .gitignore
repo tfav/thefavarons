@@ -11,6 +11,8 @@
 # and would cause many many conflicts
 css/style.min.css
 css/style.min.css.map
+css/style.css.map
+.sass-cache/
 
 # compressed version of javascript (created with grunt / uglify)
 js/javascript.min.js

@@ -3,6 +3,7 @@
 @import 'colors';
 @import 'fonts';
 @import 'faq';
+@import 'bootstrap';
 
 @import url(http://fonts.googleapis.com/css?family=Dancing+Script|Lato);
 @import url(http://weloveiconfonts.com/api/?family=fontawesome);
@@ -16,11 +17,11 @@ h1, h2, h3 {
   font-family: 'alegre_sansregular', Helvetica, Sans-serif;
   letter-spacing: 4px;
 }
-p, span, a, h4 {
+p, span, a {
     font-family: 'Lato', Helvetica;
 }
 
-h5 {
+h4, h5, h6 {
   font-family: 'Dancing Script';
 }
 
@@ -31,12 +32,26 @@ a {
     color: $cornflower;
   }
 }
+html {
+  background-color: $navy;
+}
 
+.name-not-found {
+  text-align: center;
+  padding-top: 25%;
+}
+.list-unstyled {
+  list-style: none;
+  -webkit-padding-start: 0px;
+  -moz-padding-start: 0px;
+  -o-padding-start: 0px;
+}
 .wrapper {
   margin: 0 auto;
   padding: 0;
   max-width: 1500px;
   color: $gray;
+  background-color: transparent;
 
   .image-bg-default {
     background: url("../img/_K3C1571.jpg") no-repeat;
@@ -46,7 +61,7 @@ a {
   }
 
   .image-bg-1 {
-    background: -webkit-linear-gradient(top, rgba(28,74,115, 0.5) 0%, rgba(38,84,125, 0.7) 100%), url('../img/EK3C4700.jpg');
+    background: -webkit-linear-gradient(top, rgba(28,74,115, 0.5) 0%, rgba(28,74,115, 0.5) 100%), url('../img/EK3C4700.jpg');
     background-size: 100%;
     height: 50vw;
     // background-position-y: -100px;
@@ -115,7 +130,10 @@ a {
     }
   }
 }
-
+.page-minor > .image-bg-1 {
+  height: 75px;
+  background-position-y: -500px;
+}
 .column-left {
   width: 49%;
   display: inline-block;
@@ -129,12 +147,45 @@ a {
 
 .content {
   padding-top: 30px;
+  background: $white;
+  padding-bottom: 30px;
   h3 {
     font-size: 3em;
     text-align: center;
   }
 }
+.page-minor {
+  .content {
+    margin: 0 auto;
+    min-height: 70%;
 
+    h4 {
+      color: $navy;
+      font-size: 2.25em;
+      margin-bottom: 0.5em;
+    }
+    h5 {
+        font-size: 1.5em;
+        color: $gold;
+        margin-bottom: 0px;
+    }
+    .form-section-subtitle {
+      color: $medium-gray;
+    }
+    .form-group.dropdowns {
+      width: 15%;
+      display: inline-block;
+      margin-right: 5%;
+    }
+  }
+  .form-wrapper {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .content-centered {
+    text-align: center;
+  }
+}
 #map1, #map2 {
   width: 300px;
   height: 300px;
@@ -185,7 +236,6 @@ a {
 footer {
   height: 80px;
   padding-top: 30px;
-  margin-top: 40px;
   background-color: $navy;
   color: lighten($navy, 25%);
   text-align: center;
