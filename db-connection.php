@@ -13,7 +13,7 @@ $dbpass = "f]8+xtT4Rqmr";
 $dbtable = "thefavarons";
 
 
-$link = new mysqli("internal-db.s140168.gridserver.com", "db140168_wedding", "Favaronwedding2015!", "thefavarons");
+$link = new mysqli("internal-db.s140168.gridserver.com", "db140168_wedding", "Favaronwedding2015!", "db140168_thefavarons");
 
 // Check connection
 if($link === false){
