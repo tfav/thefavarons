@@ -15,8 +15,8 @@
 
    } elseif(mysqli_num_rows($result) <= 0) {
      echo "<div class='name-not-found'>
-        <p>Sorry, we couldn't find your invitation. Please <a href='lookup.php'>try again</a>.</p>
-        <p>If you are having repeated trouble, please <a href='contact.php'>contact us</a>.</p>
+        <p>Sorry, we couldn't find your invitation. Please <a href='lookup'>try again</a>.</p>
+        <p>If you are having repeated trouble, please <a href='contact'>contact us</a>.</p>
      </div>";
 
      // Close result set
