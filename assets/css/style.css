@@ -2171,7 +2171,14 @@ html {
     margin-bottom: 0.5em; }
   .page-minor .content h5 {
     font-size: 1.5em;
-    color: #cd9957; }
+    color: #cd9957;
+    margin-bottom: 0px; }
+  .page-minor .content .form-section-subtitle {
+    color: #888; }
+  .page-minor .content .form-group.dropdowns {
+    width: 15%;
+    display: inline-block;
+    margin-right: 5%; }
 .page-minor .form-wrapper {
   width: 60%;
   margin: 0 auto; }

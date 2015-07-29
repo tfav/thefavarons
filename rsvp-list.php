@@ -51,6 +51,7 @@ if($user == "admin" && $pass == "Favaronwedding2015") {
             echo "</tr>";
         }
         echo "</table>";
+        echo "<p>environment: " . $_ENV['DATABASE_SERVER'] . "</p>";
         // Close result set
         mysqli_free_result($result);
     } else{

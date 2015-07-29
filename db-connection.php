@@ -1,4 +1,12 @@
-<?php $link = mysqli_connect("localhost", "root", "root", "thefavarons");
+<?php
+
+$dbhost = $_ENV['DATABASE_SERVER'];
+$dbuser = "root";
+$dbpass = "root";
+$dbtable = "thefavarons";
+
+
+$link = mysqli_connect($dbhost, $dbuser, $dbpass, $dbtable);
 
 // Check connection
 if($link === false){

@@ -167,6 +167,15 @@ html {
     h5 {
         font-size: 1.5em;
         color: $gold;
+        margin-bottom: 0px;
+    }
+    .form-section-subtitle {
+      color: $medium-gray;
+    }
+    .form-group.dropdowns {
+      width: 15%;
+      display: inline-block;
+      margin-right: 5%;
     }
   }
   .form-wrapper {
