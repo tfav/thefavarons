@@ -2157,7 +2157,7 @@ html {
 .rsvp-lookup p {
   color: #888; }
 .rsvp-lookup h5 {
-  margin-bottom: 1em; }
+  margin-bottom: 1em !important; }
 .rsvp-lookup form {
   margin-bottom: 2.5em; }
 
