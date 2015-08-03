@@ -144,7 +144,17 @@ html {
   display: inline-block;
 
 }
-
+.rsvp-lookup {
+  p {
+    color: $medium-gray;
+  }
+  h5 {
+    margin-bottom: 1em;
+  }
+  form {
+    margin-bottom: 2.5em;
+  }
+}
 .content {
   padding-top: 30px;
   background: $white;

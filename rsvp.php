@@ -5,7 +5,7 @@
     <?php require_once('nav.php') ?>
   </div>
   </div>
-  <div class="content content-centered">
+  <div class="content content-centered rsvp-lookup">
     <!-- <h5>Hang tight, you'll be able to RSVP soon!</h5> -->
     <h5>Please enter the name on your invitation</h5>
     <form class="form-inline" action="rsvp-form" method="post" data-toggle="validator">
@@ -14,9 +14,9 @@
       </div>
       <button type="submit" class="btn btn-default btn-lg">Find</button>
     </form>
-    <p>If you invitation says "Mr. and Mrs. Travis Favaron", then search "Travis Favaron"</p>
-    <p>If you invitation says "The Thornburg Family", then search "The Thornburg Family"</p>
-    <p>If you invitation says "Ms. Ashley Thornburg &amp; Guest", then search "Ashley Thornburg"</p>
+    <p>If your invitation says "Mr. and Mrs. Travis Favaron", then search "Travis Favaron"</p>
+    <p>If your invitation says "The Thornburg Family", then search "The Thornburg Family"</p>
+    <p>If your invitation says "Ms. Ashley Thornburg &amp; Guest", then search "Ashley Thornburg"</p>
     <p>If you are having trouble finding your invitation, please <a href='contact'>contact us</a></p>
   </div>
 <?php require_once('footer.php') ?>

@@ -2154,6 +2154,13 @@ html {
   width: 49%;
   display: inline-block; }
 
+.rsvp-lookup p {
+  color: #888; }
+.rsvp-lookup h5 {
+  margin-bottom: 1em; }
+.rsvp-lookup form {
+  margin-bottom: 2.5em; }
+
 .content {
   padding-top: 30px;
   background: #fff;
