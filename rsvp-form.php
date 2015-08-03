@@ -156,7 +156,7 @@ mysqli_close($link);
       </div>
       <div class="form-group">
         <label for="address_line_2" class="control-label">Address Line 2 (optional)</label>
-        <input type="text" class="form-control" name="address_line_2" placeholder="Apartment number" required>
+        <input type="text" class="form-control" name="address_line_2" placeholder="Apartment number">
       </div>
       <div class="form-group">
         <label for="city" class="control-label">City</label>
