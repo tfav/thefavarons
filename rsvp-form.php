@@ -152,7 +152,7 @@ mysqli_close($link);
       <p class="form-section-subtitle">For all of life's moments that require a good ol' fashioned snail mail update.</p>
       <div class="form-group">
           <label for="address_line_1" class="control-label">Address Line 1</label>
-          <input type="text" class="form-control" name="address_line_1" placeholder="Street name and number" required>
+          <input type="text" class="form-control" name="address_line_1" placeholder="Street name and number">
       </div>
       <div class="form-group">
         <label for="address_line_2" class="control-label">Address Line 2 (optional)</label>
@@ -160,11 +160,11 @@ mysqli_close($link);
       </div>
       <div class="form-group">
         <label for="city" class="control-label">City</label>
-        <input type="text" class="form-control" name="city" placeholder="Austin" required>
+        <input type="text" class="form-control" name="city" placeholder="Austin">
       </div>
       <div class="form-group">
         <label for="state" class="control-label">State</label>
-        <select name="state" class="form-control" required>
+        <select name="state" class="form-control">
         	<option value="AL">Alabama</option>
         	<option value="AK">Alaska</option>
         	<option value="AZ">Arizona</option>
@@ -220,7 +220,7 @@ mysqli_close($link);
       </div>
       <div class="form-group">
         <label for="zipcode" class="control-label">Zipcode</label>
-        <input type="text" class="form-control" name="zipcode" placeholder="78701" required>
+        <input type="text" class="form-control" name="zipcode" placeholder="78701">
       </div>
       <hr>
       <div class="form-group">
