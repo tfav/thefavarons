@@ -22,12 +22,13 @@
 
           <h4 class="question">How do I RSVP and when do I need to RSVP by?</h4>
           <p class="answer">To RSVP, visit the URL that is included on your invitation. Please RSVP by August 21st, 2015 so that we can finalize our guest counts.</p>
-  <!--
-          <h4 class="question">Where should I park?</h4>
-          <p class="answer">Follow the directions to The Jamail House and there will be parking available on site, however, parking is limited so carpooling is smiled upon :). NEED DETAILS ABOUT ALLAN HOUSE PARKING.</p> -->
 
-          <!-- <h4 class="question">What should I wear?</h4>
-          <p class="answer">Dress for men, dress for women, overall dress level</p> -->
+          <h4 class="question" id="parkingInfo">Where should I park?</h4>
+          <p class="answer">Follow the directions to Jamail's and Frost's homes and there will be parking available on site, however, parking is limited so carpooling is smiled upon :).</p>
+          <p class="answer">Parking for Allan House: The parking lot at Central Christian Church (across the street from the Allan House) is available for guests to park. Additionally, all street parking will be free on Sunday evening.</p>
+
+          <h4 class="question">What should I wear?</h4>
+          <p class="answer">For the rehearsal, ceremony, or reception, Men should wear nice slacks, nice collared shirt and optionally a tie. Ladies should wear a nice dress or a nice pair of slacks and a blouse.</p>
 
           <h4 class="question">What should I get you?</h4>
           <p class="answer">If you would like to get us something, we are registered at  <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=542195596&eventType=Wedding&pwsurl=" target="_blank">Bed, Bath & Beyond</a>, and would love anything from our registry.</p>
@@ -38,17 +39,11 @@
           <h4 class="question">Are kids welcome?</h4>
           <p class="answer">Our reception will run until roughly 10:30pm on Sunday night with an open bar all night. If you have young kiddos, it may be best to leave them at home but we will leave the ultimate decision up to the parents. If you are bring your kids, please include that in your RSVP.</p>
 
-          <!-- <h4 class="question">How do I contact you?</h4>
-          <p class="answer">We'd love to hear from you! You can send us a message from our <a href="#">contact page</a> with any questions or comments you might have.</p> -->
-
           <h4 class="question">What is the bridal polka?</h4>
           <p class="answer">The Bridal Polka is a Western Pennsylvania (where Ashley's family is from) wedding tradition. During the Bridal Polka, all of the guests at the wedding line up to dance with the bride to polka music. Traditionally guests donate a small amount of money to the Honeymoon Fund in exchange for a shot of alcohol (if they want it) and the opportunity to briefly dance with the bride. After dancing with the bride, they join the growing crowd of people encircling the bride.
             <br>
             <br>
             After all the guests have danced with the bride, the circle collapses in on the bride and the groom, with the help of his groomsmen, tries to break through the crowd to get the bride. The groom eventually reaches his bride and carries her away.</p>
-
-          <!-- <h4 class="question">Will your last name and address be changing after the wedding?</h4>
-          <p class="answer">Yes, Ashley will become Mrs. Favaron and we will be getting a new address. For that address, please contact us through the contact page and we will happily share it with you!</p> -->
         </div>
       </div>
     </div>
