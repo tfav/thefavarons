@@ -10,6 +10,13 @@
     </div>
       <div class="content">
         <div class="content-inner">
+          <h4 class="question" id="parkingInfo">Where should I park?</h4>
+          <p class="answer">Follow the directions to Jamail's and Frost's homes and there will be parking available on site, however, parking is limited so carpooling is smiled upon :).</p>
+          <p class="answer">Parking for Allan House: The parking lot at Central Christian Church (across the street from the Allan House) is available for guests to park. Additionally, all street parking will be free on Sunday evening.</p>
+
+          <h4 class="question">What should I wear?</h4>
+          <p class="answer">For the rehearsal, ceremony, or reception, Men should wear nice slacks, nice collared shirt and optionally a tie. Ladies should wear a nice dress or a nice pair of slacks and a blouse.</p>
+          
           <h4 class="question" id="twoDays">Why are you getting married on two days?</h4>
           <p class="answer">September 26th has been the date of record in our relationship. It was the day we had our first date, the day we became "official", and the day we got engaged. So in order to make Travis only remember one date, we wanted to get married on that day as well. Austin being the popular place that it is, we couldn't find a venue that we loved and that was large enough to hold all of our friends and family on the 26th.
           <br>
@@ -20,16 +27,6 @@
           We plan to do all the major moments, besides the vows, at the reception. So be prepared for the first dance, cake cutting, the bridal polka, bouqet toss, and plenty of dancing on Sunday night.
           </p>
 
-          <h4 class="question">How do I RSVP and when do I need to RSVP by?</h4>
-          <p class="answer">To RSVP, visit the URL that is included on your invitation. Please RSVP by August 21st, 2015 so that we can finalize our guest counts.</p>
-
-          <h4 class="question" id="parkingInfo">Where should I park?</h4>
-          <p class="answer">Follow the directions to Jamail's and Frost's homes and there will be parking available on site, however, parking is limited so carpooling is smiled upon :).</p>
-          <p class="answer">Parking for Allan House: The parking lot at Central Christian Church (across the street from the Allan House) is available for guests to park. Additionally, all street parking will be free on Sunday evening.</p>
-
-          <h4 class="question">What should I wear?</h4>
-          <p class="answer">For the rehearsal, ceremony, or reception, Men should wear nice slacks, nice collared shirt and optionally a tie. Ladies should wear a nice dress or a nice pair of slacks and a blouse.</p>
-
           <h4 class="question">What should I get you?</h4>
           <p class="answer">If you would like to get us something, we are registered at  <a href="https://www.bedbathandbeyond.com:443/store/giftregistry/view_registry_guest.jsp?registryId=542195596&eventType=Wedding&pwsurl=" target="_blank">Bed, Bath & Beyond</a>, and would love anything from our registry.</p>
 
@@ -38,6 +35,9 @@
 
           <h4 class="question">Are kids welcome?</h4>
           <p class="answer">Our reception will run until roughly 10:30pm on Sunday night with an open bar all night. If you have young kiddos, it may be best to leave them at home but we will leave the ultimate decision up to the parents. If you are bring your kids, please include that in your RSVP.</p>
+
+          <h4 class="question">How do I RSVP and when do I need to RSVP by?</h4>
+          <p class="answer">To RSVP, visit the URL that is included on your invitation. Please RSVP by August 21st, 2015 so that we can finalize our guest counts.</p>
 
           <h4 class="question">What is the bridal polka?</h4>
           <p class="answer">The Bridal Polka is a Western Pennsylvania (where Ashley's family is from) wedding tradition. During the Bridal Polka, all of the guests at the wedding line up to dance with the bride to polka music. Traditionally guests donate a small amount of money to the Honeymoon Fund in exchange for a shot of alcohol (if they want it) and the opportunity to briefly dance with the bride. After dancing with the bride, they join the growing crowd of people encircling the bride.
